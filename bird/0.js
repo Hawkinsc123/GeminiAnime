@@ -5,7 +5,7 @@ const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY })
 
 const response = await ai.models.generateContent({
   model: "gemini-2.0-flash",
-  contents: `Can you help me identify this bird? It had black and white stripes, with a small patch of red on its head.`
+  contents: `Can you help me identify this character? He has yellow hair and wears a orange training jacket.`
 })
 
 console.log(response.text)
